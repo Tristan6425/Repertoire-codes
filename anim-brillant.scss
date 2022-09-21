@@ -1,5 +1,6 @@
-/*----Animation-----*/
+/*----ANIMATION  DE SURBRILLANCE SUR UN TITRE OU UN TEXTE -----*/
     h1 {
+        /*-- Lignes de code qui créer une bande blanche créant l'effet de surbrillance --*/
         background: #222 -webkit-gradient(
                 linear,
                 left top,
@@ -16,6 +17,7 @@
             transparent 60%,
             transparent 100%
         );
+        /*-- Ici sont défini les paramètres de l'effet, tel que la durée, le nombre d'i9ntérations et le type d'effet en soi --*/
         -webkit-background-size: 200px;
         color: rgba(242, 84, 91, 0.85);
         -webkit-background-clip: text;
@@ -23,6 +25,8 @@
         -webkit-animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
 
+        /*-- Voici les postions auxquels la ligne de surbrillance sera positionnée, dépendemment d'à quel pourcentage du temps défini plus haut l'animation est rendu. --*/
+        /*-- Dans ce cas, la ligne de surbrillance sera au coin gauche du texte après 20% du 3 secondes passés, puis quittera le visuel du mot lorsque l'animation sera à 90% complété --*/
         @-webkit-keyframes shine {
             0%,
             10% {
