@@ -1,47 +1,4 @@
-  /*----Animation-----*/
-    h1 {
-        /*------ CODE PRIS SUR CODEPEN: https://codepen.io/fazlurr/pen/qbWMRv -----*/
-        background: #222 -webkit-gradient(
-                linear,
-                left top,
-                right top,
-                from(#222),
-                to(#222),
-                color-stop(0.5, #fff)
-            ) 0 0 no-repeat;
-        background-image: -webkit-linear-gradient(
-            -40deg,
-            transparent 0%,
-            transparent 40%,
-            #fff 50%,
-            transparent 60%,
-            transparent 100%
-        );
-        -webkit-background-size: 200px;
-        color: rgba(242, 84, 91, 0.85);
-        -webkit-background-clip: text;
-        -webkit-animation-name: shine;
-        -webkit-animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-
-        @-webkit-keyframes shine {
-            0%,
-            10% {
-                background-position: -1000px;
-            }
-            20% {
-                background-position: top left;
-            }
-            90% {
-                background-position: top right;
-            }
-            100% {
-                background-position: 1000px;
-            }
-        }
-    }
-
-    /*----Animation-----*/
+ /*----Animation-----*/
     button {
         margin-bottom: 11%;
         padding: 10px 25px;
